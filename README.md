@@ -3,17 +3,18 @@
 ___
 
 ## Introduction
-The purpose of this program is to generate structured text (IEC 61131 Programming) that'll be used for processing 
-Moxa ioLogik E1200 Series Ethernet Remote I/O. The Moxa I/O is remote I/O for an Allen
-Bradley CompactLogix PLC.
-The program requires that a csv file be created or used that contains the following headers :
+The purpose of this program is to generate structured text (One of the IEC 6113-1 Programming Languages)   
+that'll be used for processing Moxa ioLogik E1200 Series Ethernet Remote I/O.    
+The Moxa I/O is remote I/O for an Allen Bradley CompactLogix PLC.   
 
 ### Example Header
+The program requires that a csv file be created or used that contains the following headers:  
+
 | Rack Number | Slot Number | Slot Type | Channel Number | Channel Type | Tag Name   | Raw Min | Raw Max | EU Min | EU Max | Use Counts |
 |-------------|-------------|-----------|----------------|--------------|------------|---------|---------|--------|--------|------------|
 | 1           | 0           | e1260     |  0             | rtd          | ai_temp_1  | 0       | 1200    | 0      | 10     | 1          | 
 
-> **Rack Number** - 1 - 32 for compactlogix 5380 l310er and 1- 64 for the 5380 l330er model.   
+> **Rack Number** - 1 - 32 for CompactLogix 5380 L310ER and 1- 64 for L330ER modelS.   
 > **Slot Number** - this should always be zero since moxas are remote io and standalone.  
 > **Slot Type** -  options are [e1210, e1212, e1240, e1241, e1260].  
 > **Channel Number** - dependent on the moxa model, starts at channel 0.  
